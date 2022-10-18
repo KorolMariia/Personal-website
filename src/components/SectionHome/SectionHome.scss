@@ -1,11 +1,6 @@
 @import '../../utils/variables';
 
 .section-home {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 30px;
-
   &-foto {
     width: $base-width;
     height: $base-height;

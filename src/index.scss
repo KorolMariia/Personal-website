@@ -17,7 +17,6 @@ body {
 }
 
 .container {
-  min-height: 75vh;
   margin: 20px 0;
   box-shadow: 0 0 1rem 0 rgba($secondary-background, 0.2);
   border-radius: 3px;
@@ -43,4 +42,16 @@ body {
 
 .color {
   color: $accent-color;
+}
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    flex-direction: column;
+  }
 }

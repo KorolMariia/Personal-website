@@ -3,7 +3,7 @@ import './SectionHome.scss';
 
 export default function SectionHome() {
   return (
-    <div class="section-home">
+    <div class="section">
       <img
         className="section-home-foto"
         src="/images/img-home.png"
