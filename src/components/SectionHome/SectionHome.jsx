@@ -13,9 +13,11 @@ export default function SectionHome() {
         <h2 className="section-home-description-title">Hello everyone!</h2>
         <p className="section-home-description-content">
           I’m Mariia,
+          <br />
           <span className="section-home-description-content color">
             {' < Junior Front End Developer /> '}
           </span>
+          <br />
           from Ukraine.
         </p>
         <p className="section-home-description-content">

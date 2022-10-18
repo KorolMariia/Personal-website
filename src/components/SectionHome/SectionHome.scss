@@ -2,7 +2,7 @@
 
 .section-home {
   &-foto {
-    width: $base-width;
+    width: $base-width-pic;
     height: $base-height;
   }
 
@@ -19,6 +19,7 @@
     &-content {
       margin: 0 0 20px;
       font-size: $base-fz-text;
+      line-height: 1.3;
     }
   }
 }

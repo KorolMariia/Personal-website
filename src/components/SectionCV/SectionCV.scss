@@ -1,0 +1,24 @@
+@import '../../utils/variables';
+
+.section-cv-img {
+  width: $base-width-cv;
+  height: $base-height;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1mm ridge $primary-text;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: $primary-text;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+
+  &:hover {
+    border: 1mm ridge $accent-color;
+    color: $accent-color;
+  }
+}
