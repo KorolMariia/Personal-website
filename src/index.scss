@@ -1,0 +1,46 @@
+@import 'utils/variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 15px 30px;
+  background-color: $primary-background;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  min-height: 75vh;
+  margin: 20px 0;
+  box-shadow: 0 0 1rem 0 rgba($secondary-background, 0.2);
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba($secondary-text, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+  }
+}
+
+.color {
+  color: $accent-color;
+}

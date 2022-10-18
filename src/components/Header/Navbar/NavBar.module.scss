@@ -1,0 +1,26 @@
+@import '../../../utils/variables';
+
+.navBar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+  li {
+    list-style: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: bold;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.4s;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}

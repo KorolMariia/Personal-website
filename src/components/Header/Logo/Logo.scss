@@ -1,0 +1,11 @@
+@import '../../../utils/variables';
+
+.logo {
+  width: 130px;
+  height: 60px;
+
+  &:hover {
+    cursor: pointer;
+    color: $accent-color;
+  }
+}

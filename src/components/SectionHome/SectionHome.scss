@@ -1,0 +1,29 @@
+@import '../../utils/variables';
+
+.section-home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+
+  &-foto {
+    width: $base-width;
+    height: $base-height;
+  }
+
+  &-description {
+    color: $primary-text;
+    text-align: center;
+    font-family: monospace;
+
+    &-title {
+      margin: 0 0 20px;
+      font-size: $base-fz-title;
+    }
+
+    &-content {
+      margin: 0 0 20px;
+      font-size: $base-fz-text;
+    }
+  }
+}

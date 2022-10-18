@@ -1,0 +1,14 @@
+$primary-text: #fff;
+$secondary-text: #757575;
+$primary-background: #000;
+$secondary-background: #212121;
+$dark-primary-color: #7b1fa2;
+$light-primary-color: #e1bee7;
+$accent-color: #ff4081;
+
+$primary-padding: 30px;
+$base-fz-text: clamp(16px, calc(24 / 1600 * 100vw), 24px);
+$base-fz-title: clamp(26px, calc(36 / 1600 * 100vw), 36px);
+$base-width: clamp(300px, calc(500 / 1600 * 100vw), 500px);
+$base-height: clamp(300px, calc(500 / 1600 * 100vw), 500px);
+$base-radius: 0px 0px 12px 12px;
