@@ -8,13 +8,15 @@ $accent-color: #ff4081;
 $primary-padding: 30px;
 
 $base-fz-text: clamp(16px, calc(24 / 1600 * 100vw), 24px);
+$base-fz-sm: clamp(10px, calc(16 / 1600 * 100vw), 16px);
 $base-fz-title: clamp(26px, calc(36 / 1600 * 100vw), 36px);
 
-$base-width-cv: clamp(200px, calc(350 / 1600 * 100vw), 350px);
+$base-width-cv: clamp(250px, calc(350 / 1600 * 100vw), 350px);
 $base-width-pic: clamp(250px, calc(500 / 1600 * 100vw), 500px);
 $base-height: clamp(250px, calc(500 / 1600 * 100vw), 500px);
 $base-width-logo: clamp(70px, calc(130 / 1600 * 100vw), 130px);
 $base-height-logo: clamp(30px, calc(60 / 1600 * 100vw), 60px);
+$base-width-form: clamp(280px, calc(500 / 1600 * 100vw), 500px);
 
 %hover-btn {
   border: 1mm ridge $accent-color;

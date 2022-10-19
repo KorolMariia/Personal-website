@@ -17,14 +17,13 @@ body {
 }
 
 .container {
-  margin: 20px 0;
+  margin: 15px 0;
   box-shadow: 0 0 1rem 0 rgba($secondary-background, 0.2);
   border-radius: 3px;
   position: relative;
   z-index: 1;
   background: inherit;
   overflow: hidden;
-  // box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 
   &:before {
     content: '';
@@ -59,7 +58,6 @@ body {
 @media screen and (max-width: 767px) {
   .section {
     flex-direction: column;
-    gap: 10px;
     min-height: 75vh;
   }
 }

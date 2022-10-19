@@ -29,3 +29,10 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .section-contact-list {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
