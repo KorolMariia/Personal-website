@@ -1,8 +1,8 @@
 @import '../../../utils/variables';
 
 .logo {
-  width: 130px;
-  height: 60px;
+  width: $base-width-logo;
+  height: $base-height-logo;
 
   &:hover {
     cursor: pointer;

@@ -6,19 +6,17 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
-  padding: 15px 30px;
+  padding: 10px 30px 0;
   background-color: $primary-background;
   font-family: 'Montserrat', sans-serif;
 }
 
 .container {
-  max-height: 75vh;
   margin: 20px 0;
   box-shadow: 0 0 1rem 0 rgba($secondary-background, 0.2);
   border-radius: 3px;
@@ -62,5 +60,6 @@ body {
   .section {
     flex-direction: column;
     gap: 10px;
+    min-height: 75vh;
   }
 }
