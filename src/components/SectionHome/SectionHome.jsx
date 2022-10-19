@@ -3,7 +3,7 @@ import './SectionHome.scss';
 
 export default function SectionHome() {
   return (
-    <div class="section">
+    <div className="section">
       <img
         className="section-home-foto"
         src="/images/img-home.png"
@@ -15,7 +15,7 @@ export default function SectionHome() {
           I’m Mariia,
           <br />
           <span className="section-home-description-content color">
-            {' < Junior Front End Developer /> '}
+            {' <Junior Front End Developer /> '}
           </span>
           <br />
           from Ukraine.

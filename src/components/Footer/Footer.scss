@@ -2,10 +2,12 @@
 
 .footer {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 
   &-icons {
+    margin-right: 15px;
     color: $primary-text;
 
     &:hover {
@@ -13,5 +15,9 @@
       cursor: pointer;
       color: $accent-color;
     }
+  }
+  &-content {
+    color: $primary-text;
+    font-size: 10px;
   }
 }

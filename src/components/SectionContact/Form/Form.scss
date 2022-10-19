@@ -1,0 +1,91 @@
+@import '../../../utils/variables';
+
+.form-box {
+  &-input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+    &:focus {
+      outline: none;
+      border-bottom-color: $accent-color;
+    }
+
+    &:focus::placeholder {
+      color: $accent-color;
+    }
+  }
+  .error {
+    color: $secondary-text;
+    position: absolute;
+    font-size: 12px;
+
+    &.name {
+      right: 140px;
+      top: 65px;
+    }
+
+    &.email {
+      right: 140px;
+      top: 130px;
+    }
+
+    &.subject {
+      right: 140px;
+      top: 200px;
+    }
+
+    &::before {
+      display: inline;
+      content: '⚠ ';
+    }
+  }
+
+  .contact-form-field {
+    margin-bottom: 30px;
+    width: 500px;
+    overflow: auto;
+    flex-basis: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid $primary-text;
+    background-color: transparent;
+    resize: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: $primary-text;
+
+    &:focus {
+      outline: none;
+      border-bottom-color: $accent-color;
+    }
+
+    &:focus::placeholder {
+      color: $accent-color;
+    }
+  }
+
+  &-btn {
+    margin: 0 200px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: $primary-text;
+    border: 5px double $primary-text;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      border: 5px double $accent-color;
+      color: $accent-color;
+      transition: all 0.4s;
+    }
+  }
+}

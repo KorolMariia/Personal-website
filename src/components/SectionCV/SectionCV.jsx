@@ -3,7 +3,7 @@ import './SectionCV.scss';
 
 export default function SectionCV() {
   return (
-    <div class="section">
+    <div className="section">
       <img className="section-cv-img" src="/images/CV.jpeg" alt="CV" />
       <div className="section-cv-description">
         <a

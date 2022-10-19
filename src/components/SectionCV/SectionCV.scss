@@ -18,7 +18,6 @@
   font-weight: bold;
 
   &:hover {
-    border: 1mm ridge $accent-color;
-    color: $accent-color;
+    @extend %hover-btn;
   }
 }

@@ -1,0 +1,32 @@
+@import '../../../utils/variables';
+
+.section-contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+
+  .contact-item {
+    padding: 20px 12px;
+    border: 1mm ridge $primary-text;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: $primary-text;
+    cursor: pointer;
+
+    &:hover {
+      border: 1mm ridge $accent-color;
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+
+    .skype {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
