@@ -3,9 +3,9 @@
 .logo {
   width: $base-width-logo;
   height: $base-height-logo;
+  cursor: pointer;
 
   &:hover {
-    cursor: pointer;
     color: $accent-color;
   }
 }

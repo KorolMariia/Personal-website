@@ -1,0 +1,35 @@
+@import '../../utils/variables';
+
+.section-about {
+  &-title {
+    margin: 0 0 15px;
+  }
+
+  &-foto {
+    width: $base-width-pic;
+    height: $base-height-pic;
+  }
+
+  &-content {
+    margin: 0;
+    line-height: 1.8;
+  }
+
+  &-list {
+    margin: 0 0 30px;
+    padding-left: 10px;
+    list-style: none;
+  }
+
+  &-subtitle {
+    margin: 0 0 15px;
+  }
+}
+
+// @media screen and (max-width: 767px) {
+//   .section-about {
+//     &-foto {
+//       margin-left: 20px;
+//     }
+//   }
+// }

@@ -1,0 +1,64 @@
+@import '../../../utils/variables';
+
+.about-item {
+  margin-top: 24px;
+  border-left: 2px solid $accent-color;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &-title,
+  &-subtitle,
+  &-description {
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &-title {
+    margin: 0;
+  }
+
+  &-subtitle {
+    margin-top: 6px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      transform: translateX(calc(-50% - 1px));
+      background-color: $accent-color;
+    }
+  }
+
+  &-description.link {
+    margin: 6px 0 0;
+    color: white;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 4px 2px 5px $accent-color;
+
+    &:hover {
+      color: $accent-color;
+      transition: all 0.4s;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-item {
+    &-title,
+    &-subtitle,
+    &-description {
+      padding: 0 16px;
+    }
+  }
+}

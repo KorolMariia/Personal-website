@@ -3,22 +3,21 @@
 .navBar {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
   gap: 20px;
 
   li {
     list-style: none;
-    cursor: pointer;
     white-space: nowrap;
     font-weight: bold;
+    cursor: pointer;
 
     a {
-      color: #fff;
+      color: $primary-text;
       text-decoration: none;
-      transition: all 0.4s;
 
       &:hover {
+        transition: all 0.4s;
         color: $accent-color;
       }
     }
