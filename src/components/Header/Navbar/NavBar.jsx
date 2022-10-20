@@ -1,6 +1,8 @@
 import React from 'react';
-import classes from './NavBar.module.scss';
+import './NavBar.scss';
 import { NavLink } from 'react-router-dom';
+import CloseIcon from '@mui/icons-material/Close';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 export default function NavBar() {
   let activeStyle = {
@@ -8,57 +10,64 @@ export default function NavBar() {
   };
 
   return (
-    <nav>
-      <ul className={classes.navBar}>
-        {/* <li>
-          <NavLink
-            to="/"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            HOME
-          </NavLink>
-        </li> */}
-        <li>
-          <NavLink
-            to="/about"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            ABOUT ME
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/skills"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            SKILLS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/projects"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            PROJECTS
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/cv"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            CV
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/contact"
-            style={({ isActive }) => (isActive ? activeStyle : undefined)}
-          >
-            CONTACT
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <label for="nav-trigger" class="nav-open">
+        <MenuOpenIcon />
+      </label>
+      <nav className="nav">
+        <input id="nav-trigger" type="checkbox" />
+        <label for="nav-trigger" className="background"></label>
+        <ul className="nav-list">
+          <li className="nav-list-item">
+            <label for="nav-trigger" className="nav-close">
+              <CloseIcon />
+            </label>
+            <NavLink
+              className="nav-list-item-link"
+              to="/about"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              ABOUT ME
+            </NavLink>
+          </li>
+          <li className="nav-list-item">
+            <NavLink
+              className="nav-list-item-link"
+              to="/skills"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              SKILLS
+            </NavLink>
+          </li>
+          <li className="nav-list-item">
+            <NavLink
+              className="nav-list-item-link"
+              to="/projects"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              PROJECTS
+            </NavLink>
+          </li>
+          <li className="nav-list-item">
+            <NavLink
+              className="nav-list-item-link"
+              to="/cv"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              CV
+            </NavLink>
+          </li>
+          <li className="nav-list-item">
+            <NavLink
+              className="nav-list-item-link"
+              to="/contact"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              CONTACT
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }

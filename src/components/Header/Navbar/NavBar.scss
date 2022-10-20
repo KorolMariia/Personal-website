@@ -1,0 +1,98 @@
+@import '../../../utils/variables';
+
+#nav-trigger,
+.nav-close,
+.nav-open {
+  display: none;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+
+  &-item {
+    list-style: none;
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+
+    &-link {
+      color: $primary-text;
+      text-decoration: none;
+
+      &:hover {
+        transition: all 0.4s;
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-open {
+    display: block;
+  }
+  .nav {
+    z-index: 10;
+
+    &-list {
+      display: flex;
+      padding: 64px 20px 20px;
+      flex-direction: column;
+      align-items: stretch;
+      position: fixed;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $primary-background;
+      border-radius: 12px 12px 0px 0px;
+      transition: transform 0.5s ease-out;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+
+        &-link {
+          background: $secondary-background;
+          border-radius: 12px;
+          color: $primary-text;
+          padding: 8px;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+        }
+      }
+    }
+
+    &-close {
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      border: none;
+    }
+
+    #nav-trigger:checked ~ .nav-list {
+      transform: translateY(-100%);
+      z-index: 10;
+    }
+
+    .background {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: black;
+    }
+
+    #nav-trigger:checked ~ .background {
+      display: block;
+      opacity: 0.5;
+    }
+  }
+}
