@@ -34,8 +34,14 @@
   .nav-open {
     display: block;
   }
+
+  .openicon {
+    color: $accent-color;
+  }
+
   .nav {
     z-index: 10;
+    position: absolute;
 
     &-list {
       display: flex;

@@ -12,7 +12,7 @@ export default function NavBar() {
   return (
     <>
       <label for="nav-trigger" class="nav-open">
-        <MenuOpenIcon />
+        <MenuOpenIcon className="openicon" />
       </label>
       <nav className="nav">
         <input id="nav-trigger" type="checkbox" />
