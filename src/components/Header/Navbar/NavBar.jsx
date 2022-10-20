@@ -23,7 +23,7 @@ export default function NavBar() {
             to="/about"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            ABOUT
+            ABOUT ME
           </NavLink>
         </li>
         <li>

@@ -4,7 +4,7 @@ import './ListEducation.scss';
 export default function ListEducation({ title, time, place, link, desc }) {
   return (
     <li className="about-item">
-      <h4 className="about-item-title">{title}</h4>
+      <h5 className="about-item-title">{title}</h5>
       <div className="about-item-subtitle">
         <time>{time} </time>
         <span className="vertical-dilimiter">&#124;</span>

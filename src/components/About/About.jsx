@@ -18,7 +18,7 @@ export default function About() {
       </div>
       <div>
         <ul className="section-about-list">
-          <h4 className="section-about-subtitle">
+          <h4 className="section-about-subtitle color">
             <SchoolIcon sx={{ marginRight: '5px' }} />
             Education
           </h4>
