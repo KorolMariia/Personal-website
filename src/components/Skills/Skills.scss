@@ -1,0 +1,17 @@
+@import '../../utils/variables';
+
+.b {
+  flex-basis: 40%;
+}
+
+.skills {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.section-skills-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 2px solid $accent-color;
+}

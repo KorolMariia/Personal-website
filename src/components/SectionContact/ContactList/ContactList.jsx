@@ -14,7 +14,7 @@ export default function ContactList() {
       <h2 className="section-title">
         Get <span className="color">In Touch</span>
       </h2>
-      <li className="contact-item">
+      <li className="contact-item btn-3">
         <PhoneAndroidIcon />
         <SectionContactLink
           link={'tel:+380938292340'}

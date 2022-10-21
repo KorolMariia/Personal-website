@@ -2,7 +2,7 @@ import React from 'react';
 import './NavBar.scss';
 import { NavLink } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import SegmentIcon from '@mui/icons-material/Segment';
 
 export default function NavBar() {
   let activeStyle = {
@@ -12,7 +12,7 @@ export default function NavBar() {
   return (
     <>
       <label for="nav-trigger" class="nav-open">
-        <MenuOpenIcon className="openicon" />
+        <SegmentIcon className="color" />
       </label>
       <nav className="nav">
         <input id="nav-trigger" type="checkbox" />

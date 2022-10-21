@@ -1,0 +1,21 @@
+@import '../../../utils/variables';
+
+.section-skills-item-content {
+  margin: 16px 0 0;
+  font-weight: bold;
+  padding-left: 32px;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    transform: translateX(calc(-50% - 1px));
+    background-color: $accent-color;
+  }
+}

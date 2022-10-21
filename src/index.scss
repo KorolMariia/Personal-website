@@ -52,6 +52,7 @@ body {
   align-items: center;
   padding: 30px;
   gap: 40px;
+  min-height: 75vh;
 
   &-title {
     color: $primary-text;
@@ -61,9 +62,6 @@ body {
 @media screen and (max-width: 767px) {
   .section {
     flex-direction: column;
-  }
-
-  .css-10umb9k-MuiSvgIcon-root {
-    font-size: 2rem;
+    padding: 20px;
   }
 }

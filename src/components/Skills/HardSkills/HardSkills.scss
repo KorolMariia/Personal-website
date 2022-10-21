@@ -1,0 +1,97 @@
+@import '../../../utils/variables';
+
+.skills-container {
+  width: 190px;
+  perspective: 3000px;
+  position: relative;
+  padding-top: 80px;
+
+  .skills-carousel {
+    width: 100%;
+    // position: absolute;
+    // left: $left;
+    margin-left: $left;
+    animation: skills-animate 30s infinite linear;
+    transform-style: preserve-3d;
+
+    &:hover {
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+
+    figure {
+      width: 100%;
+      height: 120px;
+      border: 1px solid $accent-color;
+      overflow: hidden;
+      position: absolute;
+
+      &:nth-child(1) {
+        transform: rotateY(0deg) translateZ($translateZ);
+      }
+      &:nth-child(2) {
+        transform: rotateY(32.7deg) translateZ($translateZ);
+      }
+      &:nth-child(3) {
+        transform: rotateY(65.4deg) translateZ($translateZ);
+      }
+      &:nth-child(4) {
+        transform: rotateY(98.1deg) translateZ($translateZ);
+      }
+      &:nth-child(5) {
+        transform: rotateY(130.8deg) translateZ($translateZ);
+      }
+      &:nth-child(6) {
+        transform: rotateY(163.5deg) translateZ($translateZ);
+      }
+      &:nth-child(7) {
+        transform: rotateY(196.2deg) translateZ($translateZ);
+      }
+      &:nth-child(8) {
+        transform: rotateY(228.9deg) translateZ($translateZ);
+      }
+      &:nth-child(9) {
+        transform: rotateY(261.6deg) translateZ($translateZ);
+      }
+      &:nth-child(10) {
+        transform: rotateY(294.3deg) translateZ($translateZ);
+      }
+      &:nth-child(11) {
+        transform: rotateY(327deg) translateZ($translateZ);
+      }
+    }
+  }
+  .skills-slide {
+    box-shadow: 0px 0px 20px 0px $secondary-text;
+    border-radius: 1px;
+    background-color: $primary-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    image-rendering: auto;
+    transition: all 300ms;
+    height: 80%;
+    padding: 16px;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 300ms;
+    }
+  }
+
+  .skills-logo {
+    object-fit: contain;
+  }
+
+  @keyframes skills-animate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+}

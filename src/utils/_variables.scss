@@ -20,6 +20,9 @@ $base-width-logo: clamp(70px, calc(130 / 1600 * 100vw), 130px);
 $base-height-logo: clamp(30px, calc(60 / 1600 * 100vw), 60px);
 $base-width-form: clamp(280px, calc(500 / 1600 * 100vw), 500px);
 
+$translateZ: clamp(100px, calc(350 / 1600 * 100vw), 350px);
+$left: clamp(20px, calc(300 / 1600 * 100vw), 300px);
+
 %hover-btn {
   border: 1mm ridge $accent-color;
   color: $accent-color;
