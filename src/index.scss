@@ -60,6 +60,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    margin: 10px 0;
+  }
   .section {
     flex-direction: column;
     padding: 20px;
