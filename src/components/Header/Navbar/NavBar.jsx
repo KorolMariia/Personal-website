@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     <>
-      <label for="nav-trigger" class="nav-open">
+      <label htmlFor="nav-trigger" className="nav-open">
         <GridViewIcon
           className="color"
           sx={{ fontSize: '2rem', boxShadow: '4px 2px 5px #ff4081' }}
@@ -19,10 +19,10 @@ export default function NavBar() {
       </label>
       <nav className="nav">
         <input id="nav-trigger" type="checkbox" />
-        <label for="nav-trigger" className="background"></label>
+        <label htmlFor="nav-trigger" className="background"></label>
         <ul className="nav-list">
           <li className="nav-list-item">
-            <label for="nav-trigger" className="nav-close">
+            <label htmlFor="nav-trigger" className="nav-close">
               <CloseIcon />
             </label>
             <NavLink

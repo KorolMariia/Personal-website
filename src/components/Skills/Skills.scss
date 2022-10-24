@@ -9,10 +9,6 @@
 }
 
 .section-skills {
-  display: flex;
-  flex-direction: column;
-  gap: $skills-container-gap;
-
   &-list {
     margin: 0;
     padding: 0;

@@ -1,8 +1,9 @@
 @import '../../../utils/variables';
 
 .form-box {
+  position: relative;
+
   &-input {
-    position: relative;
     width: 100%;
     padding: 10px 0;
     font-size: 14px;
@@ -23,25 +24,12 @@
     }
   }
   .error {
-    color: $secondary-text;
+    color: $accent-color;
     position: absolute;
     font-size: 12px;
     margin: 0;
-
-    &.name {
-      right: 140px;
-      top: 55px;
-    }
-
-    &.email {
-      right: 140px;
-      top: 120px;
-    }
-
-    &.subject {
-      right: 140px;
-      top: 190px;
-    }
+    right: 0;
+    top: 10px;
 
     &::before {
       display: inline;

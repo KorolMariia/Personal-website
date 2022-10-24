@@ -1,0 +1,82 @@
+@import '../../../utils/variables';
+
+.projects-item {
+  flex: 1 1 300px;
+  min-width: 300px;
+
+  &-link {
+    display: block;
+    position: relative;
+    padding-top: 80%;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+  &-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 12px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    text-align: center;
+    background-color: $secondary-background;
+    color: $primary-text;
+    transition: top 0.5s;
+
+    .projects-item-title {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+      color: inherit;
+    }
+
+    .projects-item-content {
+      display: none;
+    }
+  }
+}
+
+.projects-item-link:hover .projects-item-info {
+  .projects-item-content {
+    display: block;
+  }
+  top: 0;
+  transform: translateY(0%);
+  height: 100%;
+}
+
+.projects-item-title::after {
+  content: '';
+  display: block;
+  margin: 4px auto 0;
+  width: 32px;
+  height: 2px;
+  border-radius: 100vw;
+  background-color: $primary-text;
+}
+
+.item--focused:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px $accent-color;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects-item {
+    min-width: 260px;
+  }
+}
