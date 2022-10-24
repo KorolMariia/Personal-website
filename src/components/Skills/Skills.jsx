@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.scss';
-// import HardSkills from './HardSkills/HardSkills';
+import HardSkills from './HardSkills/HardSkills';
 import SoftSkillsItem from './SotfSkills/SoftSkillsItem';
 
 export default function Skills() {
@@ -10,7 +10,7 @@ export default function Skills() {
         <h2 className="section-skills-title">
           Hard <span className="color">Skills</span>
         </h2>
-        {/* <HardSkills /> */}
+        <HardSkills />
       </div>
       <div className="b">
         <h2 className="section-skills-title">

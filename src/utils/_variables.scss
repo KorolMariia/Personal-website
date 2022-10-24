@@ -23,6 +23,10 @@ $base-width-form: clamp(280px, calc(500 / 1600 * 100vw), 500px);
 $translateZ: clamp(100px, calc(350 / 1600 * 100vw), 350px);
 $left: clamp(20px, calc(300 / 1600 * 100vw), 300px);
 
+$skills-container-height: clamp(150px, calc(190 / 1600 * 100vw), 190px);
+$skills-container-width: clamp(50px, calc(180 / 1600 * 100vw), 180px);
+$skills-container-padding: clamp(20px, calc(80 / 1600 * 100vw), 80px);
+
 %hover-btn {
   border: 1mm ridge $accent-color;
   color: $accent-color;
