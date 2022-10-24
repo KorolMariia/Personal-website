@@ -16,8 +16,6 @@ $base-height-cv: clamp(410px, calc(500 / 1600 * 100vw), 500px);
 $base-width-pic: clamp(250px, calc(500 / 1600 * 100vw), 500px);
 $base-height-pic: clamp(220px, calc(440 / 1600 * 100vw), 440px);
 $base-height: clamp(250px, calc(500 / 1600 * 100vw), 500px);
-$base-width-logo: clamp(70px, calc(130 / 1600 * 100vw), 130px);
-$base-height-logo: clamp(30px, calc(60 / 1600 * 100vw), 60px);
 $base-width-form: clamp(280px, calc(500 / 1600 * 100vw), 500px);
 
 $translateZ: clamp(100px, calc(350 / 1600 * 100vw), 350px);
@@ -25,11 +23,17 @@ $left: clamp(20px, calc(300 / 1600 * 100vw), 300px);
 
 $skills-container-height: clamp(150px, calc(190 / 1600 * 100vw), 190px);
 $skills-container-width: clamp(50px, calc(180 / 1600 * 100vw), 180px);
-$skills-container-padding: clamp(20px, calc(80 / 1600 * 100vw), 80px);
+$skills-container-gap: clamp(20px, calc(100 / 1600 * 100vw), 100px);
 
 %hover-btn {
   border: 1mm ridge $accent-color;
   color: $accent-color;
   transition: all 0.4s;
   cursor: pointer;
+}
+
+%logo-animation {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }

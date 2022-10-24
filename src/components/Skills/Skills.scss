@@ -8,7 +8,11 @@
   justify-content: space-between;
   align-items: start;
 }
-
+.section-skills {
+  display: flex;
+  flex-direction: column;
+  gap: $skills-container-gap;
+}
 .section-skills-list {
   margin: 0;
   padding: 0;

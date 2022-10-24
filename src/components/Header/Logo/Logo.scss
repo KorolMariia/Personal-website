@@ -1,11 +1,49 @@
 @import '../../../utils/variables';
 
 .logo {
-  width: $base-width-logo;
-  height: $base-height-logo;
-  cursor: pointer;
+  text-decoration: none;
+  color: $primary-text;
 
-  &:hover {
-    color: $accent-color;
+  &-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .logo-content {
+      margin: 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: $base-fz-sm;
+      line-height: 1;
+    }
+  }
+
+  .name {
+    border-top: 2px solid $primary-text;
+    padding-top: 5px;
+  }
+
+  .surname {
+    border-bottom: 2px solid $primary-text;
+    padding-bottom: 5px;
+  }
+
+  .blink {
+    @extend %logo-animation;
+    animation-duration: 2s;
+  }
+
+  .blink-2 {
+    @extend %logo-animation;
+    animation-duration: 4s;
+  }
+
+  @keyframes blinker {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
 }

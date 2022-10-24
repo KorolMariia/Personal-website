@@ -17,11 +17,11 @@ export default function About() {
         />
       </div>
       <div>
+        <h4 className="section-about-subtitle color">
+          <SchoolIcon sx={{ marginRight: '5px' }} />
+          Education
+        </h4>
         <ul className="section-about-list">
-          <h4 className="section-about-subtitle color">
-            <SchoolIcon sx={{ marginRight: '5px' }} />
-            Education
-          </h4>
           <ListEducation
             title={'FRONT END PRO'}
             time={'2022'}

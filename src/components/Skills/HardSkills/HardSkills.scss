@@ -5,12 +5,9 @@
   height: $skills-container-height;
   perspective: 3000px;
   position: relative;
-  padding-top: $skills-container-padding;
 
   .skills-carousel {
     width: $skills-container-width;
-    // position: absolute;
-    // left: $left;
     margin-left: $left;
     animation: skills-animate 30s infinite linear;
     transform-style: preserve-3d;

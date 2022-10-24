@@ -6,7 +6,7 @@ import SoftSkillsItem from './SotfSkills/SoftSkillsItem';
 export default function Skills() {
   return (
     <div className="section skills">
-      <div>
+      <div className="section-skills">
         <h2 className="section-skills-title">
           Hard <span className="color">Skills</span>
         </h2>
