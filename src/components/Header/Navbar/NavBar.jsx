@@ -2,7 +2,7 @@ import React from 'react';
 import './NavBar.scss';
 import { NavLink } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
-import SegmentIcon from '@mui/icons-material/Segment';
+import GridViewIcon from '@mui/icons-material/GridView';
 
 export default function NavBar() {
   let activeStyle = {
@@ -12,7 +12,10 @@ export default function NavBar() {
   return (
     <>
       <label for="nav-trigger" class="nav-open">
-        <SegmentIcon className="color" />
+        <GridViewIcon
+          className="color"
+          sx={{ fontSize: '2rem', boxShadow: '4px 2px 5px #ff4081' }}
+        />
       </label>
       <nav className="nav">
         <input id="nav-trigger" type="checkbox" />

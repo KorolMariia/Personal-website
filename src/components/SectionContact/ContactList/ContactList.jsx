@@ -14,49 +14,49 @@ export default function ContactList() {
       <h2 className="section-title">
         Get <span className="color">In Touch</span>
       </h2>
-      <li className="contact-item btn-3">
+      <li className="contact-item btn-aniamte">
         <PhoneAndroidIcon />
         <SectionContactLink
           link={'tel:+380938292340'}
           content={+380938292340}
         />
       </li>
-      <li className="contact-item">
+      <li className="contact-item btn-aniamte">
         <EmailIcon />
         <SectionContactLink
           link={'mailto:marie.korol1991@gmail.com'}
           content={'marie.korol1991@gmail.com'}
         />
       </li>
-      <li className="contact-item">
+      <li className="contact-item btn-aniamte">
         <img className="skype" src="/images/skype.webp" alt="Logo-skype" />
         <SectionContactLink
           link={'skype:@Mariia_Korol?userinfo'}
           content={'@Mariia_Korol'}
         />
       </li>
-      <li className="contact-item">
+      <li className="contact-item btn-aniamte">
         <LinkedInIcon />
         <SectionContactLink
           link={'https://www.linkedin.com/in/mariia-korol-842893229'}
           content={'Linkedin'}
         />
       </li>
-      <li className="contact-item">
+      <li className="contact-item btn-aniamte">
         <GitHubIcon />
         <SectionContactLink
           link={'https://github.com/KorolMariia'}
           content={'Github'}
         />
       </li>
-      <li className="contact-item">
+      <li className="contact-item btn-aniamte">
         <TelegramIcon />
         <SectionContactLink
           link={'https://t.me/korol_mariia'}
           content={'@korol_mariia'}
         />
       </li>
-      <li className="contact-item">
+      <li className="contact-item btn-aniamte">
         <LocationOnIcon />
         <SectionContactLink
           link={'https://goo.gl/maps/nYJg6F7gnnaJXKxr6'}

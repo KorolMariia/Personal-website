@@ -6,18 +6,19 @@
 
 .skills {
   justify-content: space-between;
-  align-items: start;
 }
+
 .section-skills {
   display: flex;
   flex-direction: column;
   gap: $skills-container-gap;
-}
-.section-skills-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-left: 2px solid $accent-color;
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 2px solid $accent-color;
+  }
 }
 
 @media screen and (max-width: 1023px) {

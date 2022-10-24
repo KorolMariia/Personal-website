@@ -9,23 +9,66 @@
   grid-gap: 30px;
 
   .contact-item {
+    position: relative;
     padding: 20px 12px;
-    border: 1mm ridge $primary-text;
-    border-radius: 8px;
     text-align: center;
     text-decoration: none;
     color: $primary-text;
     cursor: pointer;
+    background-color: $secondary-background;
 
-    &:hover {
-      border: 1mm ridge $accent-color;
-      transition: all 0.4s;
+    &::before,
+    &::after {
+      content: '';
+      width: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.3s linear;
+      background: $accent-color;
+    }
+
+    &:hover .contact-item-content::before,
+    &:hover .contact-item-content::after {
+      height: 100%;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      width: 100%;
+    }
+
+    &-content {
+      display: block;
+
+      &::before,
+      &::after {
+        content: '';
+        width: 2px;
+        height: 0;
+        position: absolute;
+        transition: all 0.3s linear;
+        background: $accent-color;
+      }
     }
 
     .skype {
       width: 20px;
       height: 20px;
     }
+  }
+
+  .btn-aniamte::after,
+  .contact-item-content::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+  }
+
+  .btn-aniamte::before,
+  .contact-item-content::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
   }
 }
 

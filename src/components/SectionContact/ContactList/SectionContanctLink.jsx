@@ -9,7 +9,7 @@ export default function SectionContactLink({ link, content }) {
       rel="noopener noreferrer"
       className="contact-item-link"
     >
-      {content}
+      <span className="contact-item-content">{content}</span>
     </a>
   );
 }
