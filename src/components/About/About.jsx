@@ -12,7 +12,7 @@ export default function About() {
         </h2>
         <img
           className="section-about-foto"
-          src="/images/img-about.png"
+          src="/images/img-about.webp"
           alt="Foto"
         />
       </div>

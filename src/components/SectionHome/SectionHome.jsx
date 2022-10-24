@@ -6,13 +6,11 @@ export default function SectionHome() {
     <div className="section">
       <img
         className="section-home-foto"
-        src="/images/img-home.png"
+        src="/images/img-home.webp"
         alt="Foto"
       />
       <div className="section-home-description">
-        <h2 className="section-home-description-title animate">
-          Hello everyone!
-        </h2>
+        <h2 className="section-home-description-title">Hello everyone!</h2>
         <p className="section-home-description-content">
           I’m Mariia,
           <br />

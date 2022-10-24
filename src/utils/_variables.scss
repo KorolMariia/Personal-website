@@ -37,3 +37,31 @@ $skills-container-gap: clamp(20px, calc(100 / 1600 * 100vw), 100px);
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
+
+//@keyframes cursor {
+//   0% {
+//     border-color: $accent-color;
+//   }
+
+//   50% {
+//     border-color: transparent;
+//   }
+
+//   100% {
+//     border-color: $accent-color;
+//   }
+// }
+
+// @keyframes printed_text {
+//   from {
+//     width: 0;
+//   }
+// }
+
+// .animate {
+//   width: 20ch;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   border-right: 3px solid $accent-color;
+//   animation: cursor 0.75s step-end infinite, printed_text 4s steps(20);
+// }

@@ -29,7 +29,7 @@ export default function ContactList() {
         />
       </li>
       <li className="contact-item">
-        <img className="skype" src="/images/skype.png" alt="Logo-skype" />
+        <img className="skype" src="/images/skype.webp" alt="Logo-skype" />
         <SectionContactLink
           link={'skype:@Mariia_Korol?userinfo'}
           content={'@Mariia_Korol'}
