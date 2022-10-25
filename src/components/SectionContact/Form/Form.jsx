@@ -14,82 +14,129 @@ export default function Form() {
   } = useForm();
 
   return (
-    <form
-      onSubmit={handleSubmit()}
-      name="contact"
-      method="POST"
-      data-netlify="true"
-    >
-      <input type="hidden" name="bot-field" />
-      <input type="hidden" name="form-name" value="contact" />
-      <div className="form-box">
-        <input
-          {...register('name', {
-            required: true,
-            pattern: /^[A-Za-z]+$/i,
-          })}
-          className="form-box-input"
-          type="text"
-          placeholder="Name *"
-          name="name"
-        />
-        {errors.name?.type === 'required' && (
-          <p className="error name">This field is required</p>
-        )}
-        {errors?.name?.type === 'pattern' && (
-          <p className="error name">Alphabetical characters only</p>
-        )}
-      </div>
-      <div className="form-box">
-        <input
-          {...register('email', { required: true })}
-          className="form-box-input"
-          type="email"
-          placeholder="Email*"
-          name="email"
-        />
-        {errors.email?.type === 'required' && (
-          <p className="error email">This field is required</p>
-        )}
-      </div>
-      <div className="form-box">
-        <input
-          {...register('subject', { required: true })}
-          className="form-box-input"
-          type="text"
-          placeholder="Subject*"
-          name="subject"
-        />
-        {errors.subject?.type === 'required' && (
-          <p className="error subject">This field is required</p>
-        )}
-      </div>
-      <div className="form-box">
-        <textarea
-          name="message"
-          rows="6"
-          className="contact-form-field"
-          placeholder="Write message"
-        ></textarea>
-      </div>
-      <input
-        type="submit"
-        className="form-box-btn"
-        value="Send Massage"
-        onClick={notify}
-      />
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
-    </form>
+    <div>
+      <form
+        name="contact v2"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+        data-netlify-honeypot="bot-field"
+      >
+        <input type="hidden" name="form-name" value="contact v2" />
+
+        <div hidden>
+          <input name="bot-field" />
+        </div>
+
+        <div>
+          <label>
+            First name
+            <br />
+            <input type="text" name="first-name" />
+          </label>
+        </div>
+
+        <div>
+          <label>
+            Last name
+            <br />
+            <input type="text" name="last-name" />
+          </label>
+        </div>
+
+        <div>
+          <label htmlFor="email">Email</label>
+          <br />
+          <input id="email" type="email" name="email" />
+        </div>
+
+        <div>
+          <label>
+            Any Comments?
+            <br />
+            <textarea name="comments"></textarea>
+          </label>
+        </div>
+
+        <button type="submit">Submit The Results</button>
+      </form>
+    </div>
+    // <form
+    //   onSubmit={handleSubmit()}
+    //   name="contact"
+    //   method="POST"
+    //   data-netlify="true"
+    // >
+    //   <input type="hidden" name="bot-field" />
+    //   <input type="hidden" name="form-name" value="contact" />
+    //   <div className="form-box">
+    //     <input
+    //       {...register('name', {
+    //         required: true,
+    //         pattern: /^[A-Za-z]+$/i,
+    //       })}
+    //       className="form-box-input"
+    //       type="text"
+    //       placeholder="Name *"
+    //       name="name"
+    //     />
+    //     {errors.name?.type === 'required' && (
+    //       <p className="error name">This field is required</p>
+    //     )}
+    //     {errors?.name?.type === 'pattern' && (
+    //       <p className="error name">Alphabetical characters only</p>
+    //     )}
+    //   </div>
+    //   <div className="form-box">
+    //     <input
+    //       {...register('email', { required: true })}
+    //       className="form-box-input"
+    //       type="email"
+    //       placeholder="Email*"
+    //       name="email"
+    //     />
+    //     {errors.email?.type === 'required' && (
+    //       <p className="error email">This field is required</p>
+    //     )}
+    //   </div>
+    //   <div className="form-box">
+    //     <input
+    //       {...register('subject', { required: true })}
+    //       className="form-box-input"
+    //       type="text"
+    //       placeholder="Subject*"
+    //       name="subject"
+    //     />
+    //     {errors.subject?.type === 'required' && (
+    //       <p className="error subject">This field is required</p>
+    //     )}
+    //   </div>
+    //   <div className="form-box">
+    //     <textarea
+    //       name="message"
+    //       rows="6"
+    //       className="contact-form-field"
+    //       placeholder="Write message"
+    //     ></textarea>
+    //   </div>
+    //   <input
+    //     type="submit"
+    //     className="form-box-btn"
+    //     value="Send Massage"
+    //     onClick={notify}
+    //   />
+    //   <ToastContainer
+    //     position="top-center"
+    //     autoClose={5000}
+    //     hideProgressBar={false}
+    //     newestOnTop={false}
+    //     closeOnClick
+    //     rtl={false}
+    //     pauseOnFocusLoss
+    //     draggable
+    //     pauseOnHover
+    //     theme="dark"
+    //   />
+    // </form>
   );
 }
