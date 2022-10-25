@@ -1,17 +1,17 @@
 import React from 'react';
 import './Form.scss';
-import { useForm } from 'react-hook-form';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+// import { useForm } from 'react-hook-form';
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
 
 export default function Form() {
-  const notify = () => toast('Message sent :)');
+  // const notify = () => toast('Message sent :)');
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   formState: { errors },
+  // } = useForm();
 
   return (
     <div>
