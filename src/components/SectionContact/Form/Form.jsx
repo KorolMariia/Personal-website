@@ -20,9 +20,9 @@ export default function Form() {
       method="POST"
       data-netlify="true"
     >
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" value="contact" />
       <div className="form-box">
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
         <input
           {...register('name', {
             required: true,
