@@ -1,7 +1,13 @@
 import React from 'react';
 import './Form.scss';
+import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
+  const navigate = useNavigate();
+
+  function navigateBackToUp() {
+    navigate('/up');
+  }
   return (
     <div>
       <form
@@ -53,7 +59,11 @@ export default function Form() {
             required
           ></textarea>
         </div>
-        <button type="submit" className="form-box-btn">
+        <button
+          type="submit"
+          className="form-box-btn"
+          onClick={() => navigateBackToUp()}
+        >
           Send Massage
         </button>
       </form>
