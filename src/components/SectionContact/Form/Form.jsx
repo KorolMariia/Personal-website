@@ -5,13 +5,12 @@ import { useNavigate } from 'react-router-dom';
 export default function Form() {
   const navigate = useNavigate();
 
-  function navigateBackToUp() {
+  function navigateToUp() {
     navigate('/up');
   }
   return (
     <div>
       <form
-        action="/"
         name="contact v2"
         method="post"
         data-netlify="true"
@@ -62,7 +61,7 @@ export default function Form() {
         <button
           type="submit"
           className="form-box-btn"
-          onClick={() => navigateBackToUp()}
+          onClick={() => navigateToUp()}
         >
           Send Massage
         </button>
