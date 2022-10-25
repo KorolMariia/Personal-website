@@ -13,14 +13,8 @@ export default function Form() {
     formState: { errors },
   } = useForm();
 
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input type="text" name="name" />
-    <input type="email" name="email" />
-    <textarea name="message"></textarea>
-  </form>;
-
   return (
-    <form onSubmit={handleSubmit()} name="contact" method="post">
+    <form onSubmit={handleSubmit()} name="contact" netlify>
       <div className="form-box">
         <input type="hidden" name="form-name" value="contact" />
         <input
