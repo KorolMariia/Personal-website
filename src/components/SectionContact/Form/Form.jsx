@@ -5,7 +5,7 @@ export default function Form() {
   return (
     <div>
       <form
-        action="/success"
+        action="/up"
         name="contact v2"
         method="post"
         data-netlify="true"
