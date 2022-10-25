@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export default function PageSkills() {
+export default function Success() {
   const navigate = useNavigate();
 
   function navigateBackToMain() {
