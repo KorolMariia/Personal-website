@@ -30,6 +30,7 @@
     padding: 24px 12px;
     position: absolute;
     top: 100%;
+    bottom: 0;
     left: 0;
     right: 0;
     transform: translateY(-100%);
@@ -54,6 +55,9 @@
 .projects-item-link:hover .projects-item-info {
   .projects-item-content {
     display: block;
+  }
+  .projects-item-title {
+    color: $accent-color;
   }
   top: 0;
   transform: translateY(0%);

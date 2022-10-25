@@ -9,7 +9,7 @@
   .skills-carousel {
     width: $skills-container-width;
     margin-left: $left;
-    animation: skills-animate 30s infinite linear;
+    animation: skills-animate 25s infinite linear;
     transform-style: preserve-3d;
 
     &:hover {
@@ -95,5 +95,16 @@
     to {
       transform: rotateY(360deg);
     }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .skills {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .skills-container {
+    margin-left: $skills-container-margin;
   }
 }

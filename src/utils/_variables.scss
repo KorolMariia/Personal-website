@@ -23,7 +23,7 @@ $left: clamp(20px, calc(300 / 1600 * 100vw), 300px);
 
 $skills-container-height: clamp(150px, calc(190 / 1600 * 100vw), 190px);
 $skills-container-width: clamp(50px, calc(180 / 1600 * 100vw), 180px);
-$skills-container-gap: clamp(20px, calc(100 / 1600 * 100vw), 100px);
+$skills-container-margin: clamp(0px, calc(150 / 1600 * 100vw), 150px);
 
 %hover-btn {
   border: 1mm ridge $accent-color;

@@ -13,9 +13,16 @@ export default function Form() {
     formState: { errors },
   } = useForm();
 
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>;
+
   return (
-    <form onSubmit={handleSubmit()}>
+    <form onSubmit={handleSubmit()} name="contact" method="post">
       <div className="form-box">
+        <input type="hidden" name="form-name" value="contact" />
         <input
           {...register('name', {
             required: true,
@@ -24,6 +31,7 @@ export default function Form() {
           className="form-box-input"
           type="text"
           placeholder="Name *"
+          name="name"
         />
         {errors.name?.type === 'required' && (
           <p className="error name">This field is required</p>
@@ -38,6 +46,7 @@ export default function Form() {
           className="form-box-input"
           type="email"
           placeholder="Email*"
+          name="email"
         />
         {errors.email?.type === 'required' && (
           <p className="error email">This field is required</p>
@@ -49,6 +58,7 @@ export default function Form() {
           className="form-box-input"
           type="text"
           placeholder="Subject*"
+          name="subject"
         />
         {errors.subject?.type === 'required' && (
           <p className="error subject">This field is required</p>

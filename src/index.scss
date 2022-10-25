@@ -6,6 +6,18 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: $accent-color $primary-background;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: $primary-background;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
 }
 
 body {

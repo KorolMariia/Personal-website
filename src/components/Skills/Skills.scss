@@ -13,12 +13,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    border-left: 2px solid $accent-color;
   }
 }
 
 @media screen and (max-width: 1023px) {
   .skills {
     flex-direction: column;
+    align-items: start;
   }
 }
