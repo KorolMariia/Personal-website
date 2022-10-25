@@ -6,6 +6,7 @@ const Skills = lazy(() => import('../pages/Skills/Skills'));
 const Projects = lazy(() => import('../pages/Projects/Projects'));
 const CV = lazy(() => import('../pages/CV/CV'));
 const Contact = lazy(() => import('../pages/Contact/Contact'));
+const Success = lazy(() => import('../pages/Success/Success'));
 
 const routes = [
   {
@@ -53,6 +54,14 @@ const routes = [
     element: (
       <Suspense>
         <Contact />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/success',
+    element: (
+      <Suspense>
+        <Success />
       </Suspense>
     ),
   },
