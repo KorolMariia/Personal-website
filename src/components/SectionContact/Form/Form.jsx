@@ -14,8 +14,14 @@ export default function Form() {
   } = useForm();
 
   return (
-    <form onSubmit={handleSubmit()} name="contact" netlify>
+    <form
+      onSubmit={handleSubmit()}
+      name="contact"
+      method="POST"
+      data-netlify="true"
+    >
       <div className="form-box">
+        <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <input
           {...register('name', {
