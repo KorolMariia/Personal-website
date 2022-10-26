@@ -1,14 +1,11 @@
 import React from 'react';
 import './Form.scss';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 export default function Form() {
-  const notify = () => toast('Your message sent');
   return (
     <div>
       <form
-        action="/"
+        action="/up"
         name="contact v2"
         method="post"
         data-netlify="true"
@@ -25,6 +22,7 @@ export default function Form() {
             name="name"
             className="form-box-input"
             placeholder="Name *"
+            required
           />
         </div>
         <div className="form-box">
@@ -34,6 +32,7 @@ export default function Form() {
             name="email"
             className="form-box-input"
             placeholder="Email *"
+            required
           />
         </div>
         <div className="form-box">
@@ -42,6 +41,7 @@ export default function Form() {
             name="subject"
             className="form-box-input"
             placeholder="Subject *"
+            required
           />
         </div>
         <div className="form-box">
@@ -50,23 +50,12 @@ export default function Form() {
             rows="6"
             className="contact-form-field"
             placeholder="Write message"
+            required
           ></textarea>
         </div>
-        <button type="submit" className="form-box-btn" onClick={notify}>
+        <button type="submit" className="form-box-btn">
           Send Massage
         </button>
-        <ToastContainer
-          position="top-center"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-        />
       </form>
     </div>
   );
