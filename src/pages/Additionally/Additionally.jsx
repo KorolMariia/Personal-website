@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import SectionSkills from '../../components/SectionSkills/SectionSkills';
+import SectionAdditionally from '../../components/SectionAdditionally/SectionAdditionally';
 import Footer from '../../components/Footer/Footer';
 
-export default function Skills() {
+export default function PageAbout() {
   return (
     <>
       <Header />
       <section className="container">
-        <SectionSkills />
+        <SectionAdditionally />
       </section>
       <Footer />
     </>

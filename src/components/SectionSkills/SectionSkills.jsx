@@ -1,9 +1,9 @@
 import React from 'react';
-import './Skills.scss';
+import './SectionSkills.scss';
 import HardSkills from './HardSkills/HardSkills';
 import SoftSkillsItem from './SotfSkills/SoftSkillsItem';
 
-export default function Skills() {
+export default function SectionSkills() {
   return (
     <div className="section skills">
       <div className="section-skills">

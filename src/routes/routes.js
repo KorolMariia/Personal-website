@@ -5,6 +5,7 @@ const About = lazy(() => import('../pages/About/About'));
 const Skills = lazy(() => import('../pages/Skills/Skills'));
 const Projects = lazy(() => import('../pages/Projects/Projects'));
 const CV = lazy(() => import('../pages/CV/CV'));
+const Additionally = lazy(() => import('../pages/Additionally/Additionally'));
 const Contact = lazy(() => import('../pages/Contact/Contact'));
 
 const routes = [
@@ -53,6 +54,14 @@ const routes = [
     element: (
       <Suspense>
         <Contact />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/additionally',
+    element: (
+      <Suspense>
+        <Additionally />
       </Suspense>
     ),
   },

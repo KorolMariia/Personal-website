@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.scss';
+import './SectionAbout.scss';
 import ListEducation from './ListEducation/ListEducation';
 import SchoolIcon from '@mui/icons-material/School';
 
-export default function About() {
+export default function SectionAbout() {
   return (
     <div className="section">
       <div>

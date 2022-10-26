@@ -1,0 +1,84 @@
+@import '../../utils/variables';
+
+.additionally {
+  justify-content: space-between;
+
+  .slider {
+    overflow: hidden;
+    width: $base-width-form;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 0px $secondary-text;
+    border-radius: 8px;
+
+    &-figure {
+      position: relative;
+      width: 600%;
+      margin: 0;
+      left: 0;
+      animation: 30s slider infinite;
+
+      &-img {
+        width: 16.6666%;
+        float: left;
+      }
+    }
+  }
+
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    15% {
+      left: 0;
+    }
+    20% {
+      left: -100%;
+    }
+    35% {
+      left: -100%;
+    }
+    40% {
+      left: -200%;
+    }
+    55% {
+      left: -200%;
+    }
+    60% {
+      left: -300%;
+    }
+    75% {
+      left: -300%;
+    }
+    80% {
+      left: -400%;
+    }
+    95% {
+      left: -400%;
+    }
+    100% {
+      left: -500%;
+    }
+  }
+
+  &-other {
+    flex-basis: 50%;
+
+    .other {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &-foto {
+        width: 160px;
+        height: 160px;
+        border-radius: 10%;
+        border: 1px solid $accent-color;
+        padding: 8px;
+      }
+    }
+
+    .end {
+      justify-content: flex-end;
+    }
+  }
+}

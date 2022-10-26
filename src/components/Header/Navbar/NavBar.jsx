@@ -63,6 +63,15 @@ export default function NavBar() {
           <li className="nav-list-item">
             <NavLink
               className="nav-list-item-link"
+              to="/additionally"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
+              ADDITIONALLY
+            </NavLink>
+          </li>
+          <li className="nav-list-item">
+            <NavLink
+              className="nav-list-item-link"
               to="/contact"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
             >
