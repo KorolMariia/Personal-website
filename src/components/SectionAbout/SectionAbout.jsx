@@ -36,13 +36,17 @@ export default function SectionAbout() {
             link={'https://certificate.ithillel.ua/view/23624442'}
             desc={'Click here to view a Cetrificate'}
           />
-          <ListEducation
-            title={'BUSINESS AND MANAGEMENT'}
-            time={'2007-2012'}
-            place={'Mechnikov National University (Odesa, Ukraine)'}
-            link={'#'}
-            desc={'Obtained the Master’s degree'}
-          />
+          <li className="about-item">
+            <h5 className="about-item-title">BUSINESS AND MANAGEMENT</h5>
+            <div className="about-item-subtitle">
+              <time>2007-2012 </time>
+              <span className="vertical-dilimiter">&#124;</span>
+              <span> Mechnikov National University (Odesa, Ukraine)</span>
+            </div>
+            <p className="about-item-description">
+              Obtained the Master’s degree
+            </p>
+          </li>
         </ul>
         <p className="section-about-content color">
           {'< I try to code beautiful simple things and I love what I do />'}
@@ -60,10 +64,6 @@ export default function SectionAbout() {
           experience in teamwork, I know how to find solutions in any
           problematic situation and take full responsibility for the results of
           my own work.{' '}
-        </p>
-        <p className="section-about-content">
-          {' '}
-          I have a sense of purpose in studying a case that is new for me.{' '}
         </p>
       </div>
     </div>

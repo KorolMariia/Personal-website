@@ -37,8 +37,11 @@
     }
   }
 
-  &-description.link {
+  &-description {
     margin: 6px 0 0;
+  }
+
+  &-description.link {
     color: $primary-text;
     display: block;
     text-decoration: none;
