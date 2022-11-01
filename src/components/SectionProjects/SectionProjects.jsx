@@ -41,7 +41,7 @@ export default function SectionProjects() {
             }
           />
           <ListProjects
-            href={'https://korolmariia.github.io/HLegals-home/'}
+            href={'https://hlegals.netlify.app/'}
             src={'item-3.png'}
             alt={'HLegals'}
             title={'HLegals'}
@@ -54,6 +54,7 @@ export default function SectionProjects() {
                   <li>SASS</li>
                   <li>JS</li>
                   <li>Adaptive, responsive, @media-queries</li>
+                  <li>Netlify for deploy</li>
                 </ul>
               </>
             }
@@ -81,18 +82,15 @@ export default function SectionProjects() {
             }
           />
           <ListProjects
-            href={'https://korolmariia.github.io/Some-Product-Site/'}
+            href={'https://jonyray.com/'}
             src={'item-1.png'}
-            alt={'Some Product Site'}
-            title={'Some Product Site'}
+            alt={'ART Gallery Jony Ray'}
+            title={'ART Gallery Jony Ray'}
             content={
               <>
-                <span className="projects-list-content">I used:</span>
-                <ul className="projects-list-content">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>BEM methodology</li>
-                </ul>
+                <p className="projects-list-content">
+                  This project was bootstrapped with WordPress.
+                </p>
               </>
             }
           />
@@ -159,10 +157,20 @@ export default function SectionProjects() {
             }
           />
           <ListProjects
-            href={'#'}
-            src={'item-6.png'}
-            alt={'PlayList'}
-            title={'PlayList'}
+            href={'https://korolmariia.github.io/Some-Product-Site/'}
+            src={'item-7.png'}
+            alt={'Some Product Site'}
+            title={'Some Product Site'}
+            content={
+              <>
+                <span className="projects-list-content">I used:</span>
+                <ul className="projects-list-content">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>BEM methodology</li>
+                </ul>
+              </>
+            }
           />
         </ul>
       </div>
