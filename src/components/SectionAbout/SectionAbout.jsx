@@ -1,5 +1,4 @@
-import React from 'react';
-import './SectionAbout.scss';
+import React from 'react';import './SectionAbout.scss';
 import ListEducation from './ListEducation/ListEducation';
 import SchoolIcon from '@mui/icons-material/School';
 
@@ -22,6 +21,15 @@ export default function SectionAbout() {
           Education
         </h4>
         <ul className="section-about-list">
+          <li className="about-item">
+            <h5 className="about-item-title">REACT</h5>
+            <div className="about-item-subtitle">
+              <time>2023 </time>
+              <span className="vertical-dilimiter">&#124;</span>
+              <span> Hillel IT School</span>
+            </div>
+            <p className="about-item-description">In progress ...</p>
+          </li>
           <ListEducation
             title={'FRONT END PRO'}
             time={'2022'}
@@ -52,11 +60,16 @@ export default function SectionAbout() {
           {'< I try to code beautiful simple things and I love what I do />'}
         </p>
         <p className="section-about-content">
-          I’m a Manager-economist who decided to reload career and restart it as
-          a Front End Developer.{' '}
+          I am a manager-economist who decided to reload my career and relaunch
+          it as a Front End Developer.
         </p>
         <p className="section-about-content">
-          My goal is to become a successful developer and build my career in IT.{' '}
+          I aim to grow into a successful developer and build an IT career.
+        </p>
+        <p className="section-about-content">
+          Professional and knowledge growth, development, experience
+          enhancement, results-oriented work, and self-expression are very
+          important to me.
         </p>
         <p className="section-about-content">
           {' '}
