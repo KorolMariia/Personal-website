@@ -1,5 +1,4 @@
-import React from 'react';
-import './SectionAdditionally.scss';
+import React from 'react';import './SectionAdditionally.scss';
 
 export default function SectionAdditionally() {
   return (
@@ -52,7 +51,7 @@ export default function SectionAdditionally() {
       <div className="additionally-other">
         <div className="other end">
           <h3>
-            I love <span className="color">cooking!</span>
+            I love <span className="color">to cook!</span>
           </h3>
           <img
             className="other-foto"
@@ -67,7 +66,7 @@ export default function SectionAdditionally() {
             alt="Foto-Painting"
           />
           <h3>
-            I like <span className="color">painting!</span>
+            I like <span className="color">to paint!</span>
           </h3>
         </div>
         <div className="other end">

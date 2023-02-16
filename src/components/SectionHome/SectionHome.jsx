@@ -1,5 +1,4 @@
-import React from 'react';
-import './SectionHome.scss';
+import React from 'react';import './SectionHome.scss';
 
 export default function SectionHome() {
   return (
@@ -15,7 +14,7 @@ export default function SectionHome() {
           I’m Mariia,
           <br />
           <span className="section-home-description-content color">
-            {' <Junior Front End Developer /> '}
+            {' < Front End Developer /> '}
           </span>
           <br />
           from Ukraine.
