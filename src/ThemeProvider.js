@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeContext, themes } from './ThemeContext';
 
 const getTheme = () => {
@@ -8,11 +8,11 @@ const getTheme = () => {
   const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
   if (userMedia.matches) return themes.dark;
 
-  return themes.dark;
+  return themes.light;
 };
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = React.useState(getTheme);
+  const [theme, setTheme] = useState(getTheme);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
