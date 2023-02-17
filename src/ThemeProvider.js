@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { ThemeContext, themes } from './ThemeContext';
 
 const getTheme = () => {
@@ -6,7 +6,7 @@ const getTheme = () => {
   if (Object.values(themes).includes(theme)) return theme;
 
   const userMedia = window.matchMedia('(prefers-color-scheme: dark)');
-  if (userMedia.matches) return themes.light;
+  if (userMedia.matches) return themes.dark;
 
   return themes.dark;
 };
@@ -14,7 +14,7 @@ const getTheme = () => {
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = React.useState(getTheme);
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem('theme', theme);
   }, [theme]);
