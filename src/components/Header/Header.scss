@@ -1,5 +1,10 @@
-.header {
-  display: flex;
+.header {  display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &_section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
 }

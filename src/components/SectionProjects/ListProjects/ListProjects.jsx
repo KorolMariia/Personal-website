@@ -3,21 +3,21 @@ import './ListProjects.scss';
 
 export default function ListProjects({ href, src, alt, title, content }) {
   return (
-    <li class="projects-item">
+    <li className="projects-item">
       <a
         href={href}
         target="_blank"
-        class="projects-item-link item--focused"
+        className="projects-item-link item--focused"
         rel="noreferrer"
       >
         <img
           src={`/images/projects/${src}`}
           alt={alt}
-          class="projects-item-screen"
+          className="projects-item-screen"
         />
-        <div class="projects-item-info">
-          <h3 class="projects-item-title">{title}</h3>
-          <p className="projects-item-content">{content}</p>
+        <div className="projects-item-info">
+          <h3 className="projects-item-title">{title}</h3>
+          <div className="projects-item-content">{content}</div>
         </div>
       </a>
     </li>

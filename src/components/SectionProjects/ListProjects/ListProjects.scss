@@ -1,7 +1,4 @@
-@import '../../../utils/variables';
-
-.projects-item {
-  flex: 1 1 300px;
+.projects-item {  flex: 1 1 300px;
   min-width: 300px;
 
   &-link {
@@ -35,8 +32,8 @@
     right: 0;
     transform: translateY(-100%);
     text-align: center;
-    background-color: $secondary-background;
-    color: $primary-text;
+    background-color: var(--secondary-background);
+    color: var(--primary-text);
     transition: top 0.5s;
 
     .projects-item-title {
@@ -47,6 +44,7 @@
     }
 
     .projects-item-content {
+      margin-top: 10px;
       display: none;
     }
   }
@@ -57,7 +55,7 @@
     display: block;
   }
   .projects-item-title {
-    color: $accent-color;
+    color: var(--accent-color);
   }
   top: 0;
   transform: translateY(0%);
@@ -71,12 +69,12 @@
   width: 32px;
   height: 2px;
   border-radius: 100vw;
-  background-color: $primary-text;
+  background-color: var(--primary-text);
 }
 
 .item--focused:focus {
   outline: none;
-  box-shadow: 0 0 0 2px $accent-color;
+  box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 @media only screen and (max-width: 768px) {

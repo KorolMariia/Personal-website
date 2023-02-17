@@ -1,7 +1,4 @@
-@import '../../../utils/variables';
-
-.about-item {
-  margin-top: 24px;
+.about-item {  margin-top: 24px;
 
   &:first-of-type {
     margin-top: 0;
@@ -33,7 +30,7 @@
       left: 0;
       top: -10px;
       transform: translateX(calc(-50% - 1px));
-      background-color: $accent-color;
+      background-color: var(--accent-color);
     }
   }
 
@@ -42,14 +39,14 @@
   }
 
   &-description.link {
-    color: $primary-text;
+    color: var(--primary-text);
     display: block;
     text-decoration: none;
     cursor: pointer;
-    text-shadow: 4px 2px 5px $accent-color;
+    text-shadow: 4px 2px 5px var(--accent-color);
 
     &:hover {
-      color: $accent-color;
+      color: var(--accent-color);
       transition: all 0.4s;
     }
   }

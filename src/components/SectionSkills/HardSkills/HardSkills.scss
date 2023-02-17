@@ -1,5 +1,4 @@
 @import '../../../utils/variables';
-
 .skills-container {
   width: 190px;
   height: $skills-container-height;
@@ -20,7 +19,7 @@
     figure {
       width: 100%;
       height: 120px;
-      border: 1px solid $accent-color;
+      border: 1px solid var(--accent-color);
       overflow: hidden;
       position: absolute;
 
@@ -60,9 +59,9 @@
     }
   }
   .skills-slide {
-    box-shadow: 0px 0px 20px 0px $secondary-text;
+    box-shadow: 0px 0px 20px 0px (--secondary-background);
     border-radius: 1px;
-    background-color: $primary-background;
+    background-color: var(--primary-background);
     display: flex;
     flex-direction: column;
     justify-content: center;

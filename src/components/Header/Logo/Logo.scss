@@ -1,8 +1,7 @@
 @import '../../../utils/variables';
-
 .logo {
   text-decoration: none;
-  color: $primary-text;
+  color: var(--primary-text);
 
   &-container {
     display: flex;
@@ -19,12 +18,12 @@
   }
 
   .name {
-    border-top: 2px solid $primary-text;
+    border-top: 2px solid var(--primary-text);
     padding-top: 5px;
   }
 
   .surname {
-    border-bottom: 2px solid $primary-text;
+    border-bottom: 2px solid var(--primary-text);
     padding-bottom: 5px;
   }
 

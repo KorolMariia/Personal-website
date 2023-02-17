@@ -1,12 +1,4 @@
-$primary-text: #fff;
-$secondary-text: #757575;
-$primary-background: #000;
-$secondary-background: #212121;
-$dark-primary-color: #7b1fa2;
-$accent-color: #ff4081;
-
 $primary-padding: 30px;
-
 $base-fz-text: clamp(16px, calc(24 / 1600 * 100vw), 24px);
 $base-fz-sm: clamp(10px, calc(16 / 1600 * 100vw), 16px);
 $base-fz-title: clamp(26px, calc(36 / 1600 * 100vw), 36px);
@@ -26,8 +18,8 @@ $skills-container-width: clamp(50px, calc(180 / 1600 * 100vw), 180px);
 $skills-container-margin: clamp(0px, calc(150 / 1600 * 100vw), 150px);
 
 %hover-btn {
-  border: 1mm ridge $accent-color;
-  color: $accent-color;
+  border: 1mm ridge var(--accent-color);
+  color: var(--accent-color);
   transition: all 0.4s;
   cursor: pointer;
 }

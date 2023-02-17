@@ -1,5 +1,4 @@
-import React from 'react';
-import './SectionProjects.scss';
+import React from 'react';import './SectionProjects.scss';
 import ListProjects from './ListProjects/ListProjects';
 
 export default function SectionProjects() {

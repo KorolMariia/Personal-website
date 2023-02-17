@@ -1,5 +1,4 @@
 @import '../../utils/variables';
-
 .section-home {
   &-foto {
     width: $base-width-pic;
@@ -7,7 +6,7 @@
   }
 
   &-description {
-    color: $primary-text;
+    color: var(--primary-text);
     text-align: center;
     font-family: monospace;
 

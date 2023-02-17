@@ -1,7 +1,4 @@
-@import '../../../utils/variables';
-
-.section-contact-list {
-  margin: 0;
+.section-contact-list {  margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
@@ -13,9 +10,9 @@
     padding: 20px 12px;
     text-align: center;
     text-decoration: none;
-    color: $primary-text;
+    color: var(--primary-text);
     cursor: pointer;
-    background-color: $secondary-background;
+    background-color: var(--secondary-background);
 
     &::before,
     &::after {
@@ -24,7 +21,7 @@
       height: 2px;
       position: absolute;
       transition: all 0.3s linear;
-      background: $accent-color;
+      background: var(--accent-color);
     }
 
     &:hover .contact-item-content::before,
@@ -47,7 +44,7 @@
         height: 0;
         position: absolute;
         transition: all 0.3s linear;
-        background: $accent-color;
+        background: var(--accent-color);
       }
     }
 

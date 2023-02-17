@@ -1,13 +1,11 @@
-@import '../../utils/variables';
-
-.additionally {
+@import '../../utils/variables';.additionally {
   justify-content: space-between;
 
   .slider {
     overflow: hidden;
     width: $base-width-form;
     margin: 0 auto;
-    box-shadow: 0px 0px 20px 0px $secondary-text;
+    box-shadow: 0px 0px 20px 0px var(--secondary-background);
     border-radius: 8px;
 
     &-figure {
@@ -72,7 +70,7 @@
         width: 160px;
         height: 160px;
         border-radius: 10%;
-        border: 1px solid $accent-color;
+        border: 1px solid var(--accent-color);
         padding: 8px;
       }
     }

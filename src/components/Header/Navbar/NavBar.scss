@@ -1,7 +1,4 @@
-@import '../../../utils/variables';
-
-#nav-trigger,
-.nav-close,
+#nav-trigger,.nav-close,
 .nav-open {
   display: none;
 }
@@ -19,12 +16,12 @@
     cursor: pointer;
 
     &-link {
-      color: $primary-text;
+      color: var(--primary-text);
       text-decoration: none;
 
       &:hover {
         transition: all 0.4s;
-        color: $accent-color;
+        color: var(--accent-color);
       }
     }
   }
@@ -36,7 +33,7 @@
   }
 
   .openicon {
-    color: $accent-color;
+    color: var(--accent-color);
   }
 
   .nav {
@@ -52,7 +49,7 @@
       top: 100%;
       left: 0;
       right: 0;
-      background-color: $primary-background;
+      background-color: var(--primary-background);
       border-radius: 12px 12px 0px 0px;
       transition: transform 0.5s ease-out;
 
@@ -62,9 +59,9 @@
         margin-left: 0;
 
         &-link {
-          background: $secondary-background;
+          background: var(--secondary-background);
           border-radius: 12px;
-          color: $primary-text;
+          color: var(--primary-text);
           padding: 8px;
           font-size: 24px;
           line-height: 28px;

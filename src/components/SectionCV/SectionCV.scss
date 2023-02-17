@@ -1,5 +1,4 @@
 @import '../../utils/variables';
-
 .section-cv-img {
   width: $base-width-cv;
   height: $base-height-cv;
@@ -8,11 +7,11 @@
 .btn-download {
   display: inline-block;
   padding: 12px 24px;
-  border: 1mm ridge $primary-text;
+  border: 1mm ridge var(--primary-text);
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
-  color: $primary-text;
+  color: var(--primary-text);
   cursor: pointer;
   user-select: none;
   font-weight: bold;

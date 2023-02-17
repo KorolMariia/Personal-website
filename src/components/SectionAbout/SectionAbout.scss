@@ -1,5 +1,4 @@
 @import '../../utils/variables';
-
 .section-about {
   &-title {
     margin: 0 0 15px;
@@ -19,7 +18,7 @@
     margin: 0 0 30px;
     padding: 0px;
     list-style: none;
-    border-left: 2px solid $accent-color;
+    border-left: 2px solid var(--accent-color);
   }
 
   &-subtitle {
