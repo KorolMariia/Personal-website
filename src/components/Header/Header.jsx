@@ -1,5 +1,4 @@
-import React from 'react';
-import './Header.scss';
+import React from 'react';import './Header.scss';
 import NavBar from './Navbar/NavBar';
 import Logo from './Logo/Logo';
 import ToogleTheme from './ToggleTheme/ToogleTheme';
@@ -14,8 +13,8 @@ export default function Header() {
           {({ theme, setTheme }) => (
             <ToogleTheme
               onChange={() => {
-                if (theme === themes.light) setTheme(themes.dark);
                 if (theme === themes.dark) setTheme(themes.light);
+                if (theme === themes.light) setTheme(themes.dark);
               }}
               value={theme === themes.dark}
             />
