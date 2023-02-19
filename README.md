@@ -22,5 +22,9 @@ I used:
 
 
 #### To start the app do (development):
-* *npm install*
-* *npm start*
+```sh
+npm instal
+```
+```sh
+npm start
+```
