@@ -1,4 +1,4 @@
-# Site-portfolio
+# WebSite-portfolio
 [Demo](https://korolmariia.netlify.app/)
 
 Here, you can:
