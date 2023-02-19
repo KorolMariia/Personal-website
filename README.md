@@ -20,3 +20,6 @@ I used:
 - Material-UI
 - Netlify for DEMO and feedback
 
+To start the app do (development):
+* *npm install*
+* *npm start*
