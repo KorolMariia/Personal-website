@@ -1,7 +1,13 @@
-import React from 'react';
-import './ListProjects.scss';
+import React from 'react';import './ListProjects.scss';
 
-export default function ListProjects({ href, src, alt, title, content }) {
+export default function ListProjects({
+  href,
+  src,
+  alt,
+  title,
+  content,
+  hrefGit,
+}) {
   return (
     <li className="projects-item">
       <a
@@ -17,7 +23,17 @@ export default function ListProjects({ href, src, alt, title, content }) {
         />
         <div className="projects-item-info">
           <h3 className="projects-item-title">{title}</h3>
-          <div className="projects-item-content">{content}</div>
+          <div className="projects-item-content">
+            {content}
+            <a
+              href={hrefGit}
+              className="projects-item-gitlink"
+              rel="noreferrer"
+              target="_blank"
+            >
+              See the code and read about the project here.
+            </a>
+          </div>
         </div>
       </a>
     </li>

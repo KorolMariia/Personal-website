@@ -1,4 +1,5 @@
-.projects-item {  flex: 1 1 300px;
+.projects-item {
+  flex: 1 1 300px;
   min-width: 300px;
 
   &-link {
@@ -40,12 +41,23 @@
       margin: 0;
       font-size: 16px;
       line-height: 24px;
-      color: inherit;
     }
 
     .projects-item-content {
       margin-top: 10px;
       display: none;
+    }
+
+    .projects-item-gitlink {
+      margin: 5px 0 0;
+      font-size: 12px;
+      font-style: italic;
+      color: var(--accent-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

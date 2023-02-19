@@ -1,4 +1,5 @@
-import React from 'react';import './SectionProjects.scss';
+import React from 'react';
+import './SectionProjects.scss';
 import ListProjects from './ListProjects/ListProjects';
 
 export default function SectionProjects() {
@@ -38,6 +39,7 @@ export default function SectionProjects() {
                 </ul>
               </>
             }
+            hrefGit={'https://github.com/KorolMariia/Search-movies-ReactJS'}
           />
           <ListProjects
             href={'https://hlegals.netlify.app/'}
@@ -57,6 +59,29 @@ export default function SectionProjects() {
                 </ul>
               </>
             }
+            hrefGit={'https://github.com/KorolMariia/HLegals-home'}
+          />
+          <ListProjects
+            href={'https://you-tube-api-six.vercel.app/'}
+            src={'item-4.png'}
+            alt={'Youtube-API'}
+            title={'Youtube API'}
+            content={
+              <>
+                <p className="projects-list-content">
+                  This project was bootstrapped with ReactJS class component.
+                </p>
+                <span className="projects-list-content">I used:</span>
+                <ul className="projects-list-content">
+                  <li> ReactJS: class component</li>
+                  <li>Youtube API</li>
+                  <li>Axios</li>
+                  <li>Material-UI</li>
+                  <li>Versel for Demo</li>
+                </ul>
+              </>
+            }
+            hrefGit={'https://github.com/KorolMariia/YouTube-API'}
           />
           <ListProjects
             href={'https://korolmariia.netlify.app/'}
@@ -79,58 +104,7 @@ export default function SectionProjects() {
                 </ul>
               </>
             }
-          />
-          <ListProjects
-            href={'https://jonyray.com/'}
-            src={'item-1.png'}
-            alt={'ART Gallery Jony Ray'}
-            title={'ART Gallery Jony Ray'}
-            content={
-              <>
-                <p className="projects-list-content">
-                  This project was bootstrapped with WordPress.
-                </p>
-              </>
-            }
-          />
-          <ListProjects
-            href={'https://you-tube-api-six.vercel.app/'}
-            src={'item-4.png'}
-            alt={'Youtube-API'}
-            title={'Youtube API'}
-            content={
-              <>
-                <p className="projects-list-content">
-                  This project was bootstrapped with ReactJS class component.
-                </p>
-                <span className="projects-list-content">I used:</span>
-                <ul className="projects-list-content">
-                  <li> ReactJS: class component</li>
-                  <li>Youtube API</li>
-                  <li>Axios</li>
-                  <li>Material-UI</li>
-                  <li>Versel for Demo</li>
-                </ul>
-              </>
-            }
-          />
-          <ListProjects
-            href={'https://korolmariia.github.io/Rick-Morty-API/'}
-            src={'item-5.png'}
-            alt={'Rick-Morty-API'}
-            title={'Rick&Morty API'}
-            content={
-              <>
-                <span className="projects-list-content">I used:</span>
-                <ul className="projects-list-content">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JS</li>
-                  <li>DOM</li>
-                  <li>fetch to work with API</li>
-                </ul>
-              </>
-            }
+            hrefGit={'https://github.com/KorolMariia/WebSite-portfolio'}
           />
           <ListProjects
             href={'https://korolmariia.github.io/Form-registrarion/'}
@@ -154,6 +128,40 @@ export default function SectionProjects() {
                 </ul>
               </>
             }
+            hrefGit={'https://github.com/KorolMariia/Form-registrarion'}
+          />
+          <ListProjects
+            href={'https://jonyray.com/'}
+            src={'item-1.png'}
+            alt={'ART Gallery Jony Ray'}
+            title={'ART Gallery Jony Ray'}
+            content={
+              <>
+                <p className="projects-list-content">
+                  This project was bootstrapped with WordPress.
+                </p>
+              </>
+            }
+          />
+
+          <ListProjects
+            href={'https://korolmariia.github.io/Rick-Morty-API/'}
+            src={'item-5.png'}
+            alt={'Rick-Morty-API'}
+            title={'Rick&Morty API'}
+            content={
+              <>
+                <span className="projects-list-content">I used:</span>
+                <ul className="projects-list-content">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                  <li>DOM</li>
+                  <li>fetch to work with API</li>
+                </ul>
+              </>
+            }
+            hrefGit={'https://github.com/KorolMariia/Rick-Morty-API'}
           />
           <ListProjects
             href={'https://korolmariia.github.io/Some-Product-Site/'}
@@ -170,6 +178,7 @@ export default function SectionProjects() {
                 </ul>
               </>
             }
+            hrefGit={'https://github.com/KorolMariia/Some-Product-Site'}
           />
         </ul>
       </div>
