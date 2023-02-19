@@ -23,7 +23,7 @@ I used:
 
 #### To start the app do (development):
 ```sh
-npm instal
+npm install
 ```
 ```sh
 npm start
