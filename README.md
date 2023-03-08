@@ -1,12 +1,13 @@
 # WebSite-portfolio
 [Demo](https://korolmariia.netlify.app/)
 
-Here, you can:
-- read about me;
-- download my CV; 
-- get in touch with me.
+My personal website is designed to be adaptive and responsive.
 
-> In addition, you can switch the theme from darkness to light.
+* Providing comprehensive information about me.
+* Visitors can download my resume.
+* A user-friendly feedback form is available for quick and easy communication.
+* Incorporates a theme-switching function. 
+
 
 ## This project was bootstrapped with Create React App.
 
