@@ -1,4 +1,4 @@
-# WebSite-portfolio
+# Personal website
 [Demo](https://korolmariia.netlify.app/)
 
 My personal website is designed to be adaptive and responsive.
