@@ -1,4 +1,4 @@
-import React from 'react';import './ListProjects.scss';
+import React from 'react'; import './ListProjects.scss';
 
 export default function ListProjects({
   href,
@@ -25,14 +25,14 @@ export default function ListProjects({
           <h3 className="projects-item-title">{title}</h3>
           <div className="projects-item-content">
             {content}
-            <a
+            <button
               href={hrefGit}
               className="projects-item-gitlink"
               rel="noreferrer"
               target="_blank"
             >
               See the code and read about the project here.
-            </a>
+            </button>
           </div>
         </div>
       </a>

@@ -156,23 +156,26 @@ export default function SectionProjects() {
             hrefGit={'https://github.com/KorolMariia/Burger-Factory'}
           />
           <ListProjects
-            href={'https://korolmariia.github.io/Rick-Morty-API/'}
-            src={'RickMortyAPI.png'}
-            alt={'Rick-Morty-API'}
-            title={'Rick&Morty API'}
+            href={'https://playlist-kohl-seven.vercel.app/'}
+            src={'playlist.png'}
+            alt={'Playlist'}
+            title={'Playlist'}
             content={
               <>
                 <span className="projects-list-content">I used:</span>
                 <ul className="projects-list-content">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JS</li>
-                  <li>DOM</li>
-                  <li>fetch to work with API</li>
+                  <li>ReactJS: functional components and hooks</li>
+                  <li>useReducer, useContext</li>
+                  <li>React-router-dom</li>
+                  <li>React-hook-form</li>
+                  <li>JSON server</li>
+                  <li>Axios</li>
+                  <li>Material-UI</li>
+                  <li>Vercel for Demo</li>
                 </ul>
               </>
             }
-            hrefGit={'https://github.com/KorolMariia/Rick-Morty-API'}
+            hrefGit={'https://github.com/KorolMariia/Playlist'}
           />
           <ListProjects
             href={'https://jonyray.com/'}

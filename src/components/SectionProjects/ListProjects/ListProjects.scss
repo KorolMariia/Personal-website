@@ -54,6 +54,9 @@
       font-style: italic;
       color: var(--accent-color);
       text-decoration: none;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
 
       &:hover {
         text-decoration: underline;
