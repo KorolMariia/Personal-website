@@ -156,7 +156,7 @@ export default function SectionProjects() {
             hrefGit={'https://github.com/KorolMariia/Burger-Factory'}
           />
           <ListProjects
-            href={'https://playlist-kohl-seven.vercel.app/'}
+            href={'https://playlist-korol-mariia.vercel.app/'}
             src={'playlist.png'}
             alt={'Playlist'}
             title={'Playlist'}
